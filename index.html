@@ -12,12 +12,13 @@
             --text-muted: #94a3b8;
             --accent: #38bdf8;
             --border: #334155;
+            --hover-border: #38bdf8;
         }
         body {
             font-family: Arial, sans-serif;
             background-color: var(--bg-color);
             color: var(--text-main);
-            line-height: 1.25;
+            line-height: 1.4;
             margin: 0;
             padding: 20px;
         }
@@ -39,11 +40,15 @@
             font-size: 1.2rem;
             color: var(--accent);
             margin-bottom: 20px;
+            font-weight: bold;
         }
         .bio {
             color: var(--text-muted);
             font-size: 1rem;
             margin-bottom: 25px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
         }
         .section-title {
             font-size: 1.5rem;
@@ -62,10 +67,18 @@
             border: 1px solid var(--border);
             border-radius: 8px;
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: border-color 0.2s ease;
+        }
+        .card:hover {
+            border-color: var(--hover-border);
         }
         .card h3 {
             margin-top: 0;
             color: var(--accent);
+            margin-bottom: 10px;
         }
         ul {
             padding-left: 20px;
@@ -82,6 +95,22 @@
             margin-top: 15px;
             display: block;
             font-weight: bold;
+        }
+        .btn-detalle {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 14px;
+            background-color: var(--accent);
+            color: var(--bg-color);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+            border-radius: 4px;
+            text-align: center;
+            transition: opacity 0.2s ease;
+        }
+        .btn-detalle:hover {
+            opacity: 0.9;
         }
         .contact-links {
             text-align: center;
@@ -103,7 +132,7 @@
         <header>
             <h1>Iván Antonio Hernández Deras</h1>
             <div class="subtitle">Ingeniero de Software Fullstack & Arquitectura Empresarial</div>
-            <p class="bio">Desarrollo de soluciones de alto impacto y sistemas escalables orientados a optimizar la operación y control de negocios.</p>
+            <p class="bio">Desarrollo soluciones de alto impacto y sistemas escalables orientados a optimizar la operación y control de negocios con enfoque financiero y comercial.</p>
         </header>
 
         <div class="section-title">Stack Tecnológico</div>
@@ -119,7 +148,7 @@
                 <h3>Frontend & Móvil</h3>
                 <ul>
                     <li>React / JavaScript / TypeScript</li>
-                    <li>Flutter & Xamarin Forms (Móvil)</li>
+                    <li>Flutter & Xamarin Forms</li>
                     <li>Material-UI & Bootstrap</li>
                 </ul>
             </div>
@@ -135,66 +164,76 @@
         <div class="section-title">Proyectos Destacados</div>
         <div class="grid">
             <div class="card">
-                <h3>CRM Inmobiliario</h3>
-                <p class="bio">Plataforma especializada en el sector inmobiliario.</p>
-                <ul>
-                    <li>Seguimiento detallado de prospectos (Leads).</li>
-                    <li>Trazabilidad completa del proceso de compra y venta de inmuebles.</li>
-                </ul>
-                <span class="tags">Hecho en: CodeIgniter 4 / MySQL</span>
+                <div>
+                    <h3>CRM Inmobiliario</h3>
+                    <p class="bio">Plataforma web a medida para optimizar el ciclo comercial y acelerar el cierre de ventas inmobiliarias.</p>
+                    <ul>
+                        <li>Seguimiento automatizado de prospectos (Leads).</li>
+                        <li>Trazabilidad completa de compras y propiedades.</li>
+                    </ul>
+                    <span class="tags">CodeIgniter 4 / MySQL</span>
+                </div>
+                <a href="./crm-inmobiliario.html" class="btn-detalle">Ver detalles del proyecto ➔</a>
             </div>
 
             <div class="card">
-                <h3>ATENEA</h3>
-                <p class="bio">Sistema interno de gestión y control de activos empresariales.</p>
-                <ul>
-                    <li>Inventario de equipos por marca, serial y tipo.</li>
-                    <li>Asignación de equipos con generación automática de responsiva en PDF.</li>
-                    <li>Alertas de mantenimientos pendientes e historial completo por activo.</li>
-                </ul>
-                <span class="tags">Hecho en: PHP (CodeIgniter) / MySQL</span>
+                <div>
+                    <h3>ATENEA</h3>
+                    <p class="bio">Sistema interno de gestión y control de activos empresariales e inventarios.</p>
+                    <ul>
+                        <li>Inventario de equipos por marca, serial y tipo.</li>
+                        <li>Generación automática de responsivas en PDF.</li>
+                    </ul>
+                    <span class="tags">PHP (CodeIgniter) / MySQL</span>
+                </div>
             </div>
 
             <div class="card">
-                <h3>SITRADO</h3>
-                <p class="bio">Sistema de Trazabilidad Documental y Control Operativo.</p>
-                <ul>
-                    <li>Flujo de aprobaciones por permisos y perfiles específicos.</li>
-                    <li>Centraliza Minutas, 8Ds, Business Case y Mejora Continua con folio único.</li>
-                    <li>Control de carga de trabajo, cuellos de botella y productividad por usuario.</li>
-                </ul>
-                <span class="tags">Hecho en: PHP (CodeIgniter) / MySQL</span>
+                <div>
+                    <h3>SITRADO</h3>
+                    <p class="bio">Sistema de Trazabilidad Documental y Control Operativo corporativo.</p>
+                    <ul>
+                        <li>Flujo de aprobaciones por permisos y perfiles.</li>
+                        <li>Centraliza minutas, 8Ds y Business Case con folio único.</li>
+                    </ul>
+                    <span class="tags">PHP (CodeIgniter) / MySQL</span>
+                </div>
             </div>
 
             <div class="card">
-                <h3>Innovate Talleres</h3>
-                <p class="bio">Gestión integral para talleres de reparación de dispositivos.</p>
-                <ul>
-                    <li>Recepción de equipos, registro de fallas y captura de datos de clientes.</li>
-                    <li>Asignación de folios de seguimiento y módulo de inventarios con costos editables.</li>
-                </ul>
-                <span class="tags">Hecho en: CodeIgniter 4 / MySQL</span>
+                <div>
+                    <h3>Innovate Talleres</h3>
+                    <p class="bio">Gestión integral para talleres de reparación de dispositivos electrónicos.</p>
+                    <ul>
+                        <li>Recepción de equipos y captura de datos de clientes.</li>
+                        <li>Folios de seguimiento y control de inventarios.</li>
+                    </ul>
+                    <span class="tags">CodeIgniter 4 / MySQL</span>
+                </div>
             </div>
 
             <div class="card">
-                <h3>ACM (Automatizador CFDI)</h3>
-                <p class="bio">Herramienta de escritorio especializada para la gestión fiscal.</p>
-                <ul>
-                    <li>Descarga masiva de CFDI directamente por RFC sin necesidad de un PAC intermediario.</li>
-                    <li>Organización automatizada de estructuras de archivos.</li>
-                </ul>
-                <span class="tags">Hecho en: C# / Windows Forms / .NET</span>
+                <div>
+                    <h3>ACM (Automatizador CFDI)</h3>
+                    <p class="bio">Herramienta de escritorio especializada para la gestión fiscal multi-empresa.</p>
+                    <ul>
+                        <li>Descarga masiva de CFDI directo por RFC sin PAC.</li>
+                        <li>Organización automatizada de estructuras de archivos.</li>
+                    </ul>
+                    <span class="tags">C# / Windows Forms / .NET</span>
+                </div>
             </div>
 
             <div class="card">
-                <h3>SAV (Sistema de Ventas)</h3>
-                <p class="bio">Sistema administrativo para puntos de venta rápidos.</p>
-                <ul>
-                    <li>Interfaz ágil tipo OXXO con manejo de devoluciones y paquetes de venta.</li>
-                    <li>Alta de compras directo desde XML/CFDI y descargas automáticas de inventario por paquete.</li>
-                    <li>Integración con Bot de Telegram para consulta de reportes en tiempo real.</li>
-                </ul>
-                <span class="tags">Hecho en: C# / MySQL / Telegram Bot API</span>
+                <div>
+                    <h3>SAV (Sistema de Ventas)</h3>
+                    <p class="bio">Sistema administrativo para puntos de venta rápidos con control operativo.</p>
+                    <ul>
+                        <li>Interfaz ágil con manejo de devoluciones y paquetes.</li>
+                        <li>Integración con Bot de Telegram para reportes en tiempo real.</li>
+                    </ul>
+                    <span class="tags">C# / MySQL / Telegram Bot</span>
+                </div>
             </div>
         </div>
 
