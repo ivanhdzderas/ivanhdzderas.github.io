@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM Inmobiliario | Iván Antonio Hernández Deras</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --border: #334155;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.5;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .back-link {
+            display: inline-block;
+            color: var(--accent);
+            text-decoration: none;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            color: var(--text-main);
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--accent);
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 25px;
+        }
+        .card h2 {
+            margin-top: 0;
+            color: var(--accent);
+            font-size: 1.3rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 10px;
+        }
+        ul {
+            padding-left: 20px;
+            color: var(--text-muted);
+            margin: 10px 0;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .cta-box {
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            border: 1px solid var(--accent);
+            border-radius: 8px;
+            padding: 25px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .btn-github {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: var(--accent);
+            color: var(--bg-color);
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+        .btn-github:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="./index.html" class="back-link">← Volver al portafolio principal</a>
+        
+        <h1>CRM Inmobiliario</h1>
+        <div class="subtitle">Plataforma web a medida para optimizar el ciclo comercial inmobiliario</div>
+        
+        <div class="card">
+            <h2>🎯 Visión General y Propósito de Negocio</h2>
+            <p style="color: var(--text-muted);">
+                Desarrollado para resolver los retos operativos de agencias y asesores de bienes raíces, este sistema centraliza la gestión comercial reduciendo los tiempos de respuesta ante prospectos y permitiendo un control absoluto sobre el inventario de desarrollos y propiedades disponibles.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>⚙️ Arquitectura y Stack Tecnológico</h2>
+            <ul>
+                <li><strong>Backend:</strong> PHP con CodeIgniter 4, aplicando una estructura modular, ligera y altamente mantenible.</li>
+                <li><strong>Base de Datos:</strong> MySQL optimizada para consultas relacionales veloces entre asesores, prospectos e inmuebles.</li>
+                <li><strong>Seguridad y Control:</strong> Sistema de roles y permisos granulares para proteger la información comercial sensible.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>🚀 Características Principales</h2>
+            <ul>
+                <li><strong>Embudo de Ventas (Pipeline):</strong> Visualización interactiva del estatus de cada lead (contacto, cotización, apartado, escrituración).</li>
+                <li><strong>Gestión de Inventario:</strong> Catálogo filtrable por ubicación, rango de precios, tipología y disponibilidad actual.</li>
+                <li><strong>Trazabilidad Histórica:</strong> Registro detallado de llamadas, notas, citas y asignación directa de asesores a cada cuenta.</li>
+            </ul>
+        </div>
+
+        <div class="cta-box">
+            <h3>¿Interesado en mi perfil técnico?</h3>
+            <p style="color: var(--text-muted); margin-bottom: 15px;">Este proyecto refleja mi capacidad para diseñar y construir herramientas de negocio funcionales que aportan valor directo a la operación.</p>
+            <a href="https://github.com/ivanhdzderas/crm_inmovilario" target="_blank" class="btn-github">Ver Repositorio en GitHub ➔</a>
+        </div>
+    </div>
+</body>
+</html>
