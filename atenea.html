@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATENEA | Iván Antonio Hernández Deras</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --border: #334155;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.5;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .back-link {
+            display: inline-block;
+            color: var(--accent);
+            text-decoration: none;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            color: var(--text-main);
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--accent);
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 25px;
+        }
+        .card h2 {
+            margin-top: 0;
+            color: var(--accent);
+            font-size: 1.3rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 10px;
+        }
+        ul {
+            padding-left: 20px;
+            color: var(--text-muted);
+            margin: 10px 0;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .cta-box {
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            border: 1px solid var(--accent);
+            border-radius: 8px;
+            padding: 25px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .btn-github {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: var(--accent);
+            color: var(--bg-color);
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+        .btn-github:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="./index.html" class="back-link">← Volver al portafolio principal</a>
+        
+        <h1>ATENEA</h1>
+        <div class="subtitle">Sistema de gestión y control de activos empresariales e inventarios</div>
+        
+        <div class="card">
+            <h2>🎯 Visión General y Propósito de Negocio</h2>
+            <p style="color: var(--text-muted);">
+                ATENEA fue diseñada para resolver el control interno de equipos de cómputo y hardware en entornos corporativos. Automatiza la asignación de recursos tecnológicos y asegura la trazabilidad legal mediante la generación instantánea de cartas responsivas, evitando pérdidas y mermas de inventario.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>⚙️ Arquitectura y Stack Tecnológico</h2>
+            <ul>
+                <li><strong>Backend:</strong> PHP con CodeIgniter, estructurado bajo el patrón MVC para garantizar una ejecución rápida y mantenibilidad.</li>
+                <li><strong>Base de Datos:</strong> MySQL para el almacenamiento estructurado y relacional de catálogos de activos, marcas, números de serie y colaboradores.</li>
+                <li><strong>Generación de Documentos:</strong> Módulo nativo para exportación automatizada de archivos PDF legales (responsivas de equipo).</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>🚀 Características Principales</h2>
+            <ul>
+                <li><strong>Control de Activos:</strong> Registro detallado por marca, modelo, número de serie, categoría y estatus operativo.</li>
+                <li><strong>Cartas Responsivas en PDF:</strong> Vinculación directa del equipo con el empleado emitiendo el documento formal de entrega de forma automatizada.</li>
+                <li><strong>Historial y Mantenimiento:</strong> Seguimiento del ciclo de vida de cada activo, incluyendo bitácoras de fallas, reparaciones y alertas de actualización.</li>
+            </ul>
+        </div>
+
+        <div class="cta-box">
+            <h3>¿Interesado en mi perfil técnico?</h3>
+            <p style="color: var(--text-muted); margin-bottom: 15px;">Este sistema demuestra mi experiencia automatizando procesos administrativos internos de alto valor para las empresas.</p>
+            <a href="https://github.com/ivanhdzderas/atenea" target="_blank" class="btn-github">Ver Repositorio en GitHub ➔</a>
+        </div>
+    </div>
+</body>
+</html>
