@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAV (Sistema de Ventas) | Iván Antonio Hernández Deras</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --border: #334155;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.5;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .back-link {
+            display: inline-block;
+            color: var(--accent);
+            text-decoration: none;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            color: var(--text-main);
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--accent);
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 25px;
+        }
+        .card h2 {
+            margin-top: 0;
+            color: var(--accent);
+            font-size: 1.3rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 10px;
+        }
+        ul {
+            padding-left: 20px;
+            color: var(--text-muted);
+            margin: 10px 0;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .cta-box {
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            border: 1px solid var(--accent);
+            border-radius: 8px;
+            padding: 25px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .btn-github {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: var(--accent);
+            color: var(--bg-color);
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+        .btn-github:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="./index.html" class="back-link">← Volver al portafolio principal</a>
+
+        <h1>SAV (Sistema de Ventas)</h1>
+        <div class="subtitle">Sistema administrativo para puntos de venta rápidos con control operativo</div>
+
+        <div class="card">
+            <h2>🎯 Visión General y Propósito de Negocio</h2>
+            <p style="color: var(--text-muted);">
+                Sistema administrativo pensado para puntos de venta ágiles, con control operativo del negocio y reportes en tiempo real por Telegram.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>⚙️ Arquitectura y Stack Tecnológico</h2>
+            <ul>
+                <li><strong>Aplicación:</strong> C#.</li>
+                <li><strong>Base de Datos:</strong> MySQL.</li>
+                <li><strong>Integraciones:</strong> Bot de Telegram.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>🚀 Características Principales</h2>
+            <ul>
+                <li><strong>Interfaz ágil:</strong> Diseñada para vender rápido en el punto de venta.</li>
+                <li><strong>Devoluciones y paquetes:</strong> Manejo de devoluciones y de productos vendidos en paquete.</li>
+                <li><strong>Reportes por Telegram:</strong> Integración con un bot de Telegram para reportes en tiempo real.</li>
+            </ul>
+        </div>
+
+        <div class="cta-box">
+            <h3>¿Interesado en mi perfil técnico?</h3>
+            <p style="color: var(--text-muted); margin-bottom: 15px;">Con gusto te muestro una demostración o explico la arquitectura en una entrevista.</p>
+            <a href="mailto:ivanhdzderas@gmail.com" class="btn-github">Contactar ➔</a>
+        </div>
+    </div>
+</body>
+</html>
